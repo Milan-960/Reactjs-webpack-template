@@ -1,64 +1,31 @@
-const path = require('path');
+/* eslint-disable no-undef */
+import { resolve, join } from 'path';
 
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
-    port: 3000,
-    hot: true,
-  },
+export const entry = './src/index.js';
+
+export const output = {
+  path: resolve(__dirname, 'public'),
+  filename: 'bundle.js',
 };
-
-// const path = require('path');
-
-// module.exports = {
-//   entry: './src/index.js',
-//   output: {
-//     path: path.resolve(__dirname, 'dist'),
-//     filename: 'bundle.js',
-//     publicPath: '/',
-//   },
-//   module: {
-//     rules: [
-//       {
-//         test: /\.(js|jsx)$/,
-//         exclude: /node_modules/,
-//         use: {
-//           loader: 'babel-loader',
-//         },
-//       },
-//       {
-//         test: /\.css$/,
-//         use: ['style-loader', 'css-loader'],
-//       },
-//     ],
-//   },
-//   devServer: {
-//     static: {
-//       directory: path.join(__dirname, 'public'),
-//     },
-//     port: 3000,
-//     hot: true,
-//   },
-// };
+export const module = {
+  rules: [
+    {
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+      },
+    },
+    {
+      test: /\.scss$/,
+      use: ['style-loader', 'css-loader', 'sass-loader'],
+    },
+  ],
+};
+export const devServer = {
+  static: {
+    directory: join(__dirname, 'public'),
+  },
+  port: 3000,
+  hot: true,
+};
