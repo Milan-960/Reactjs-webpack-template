@@ -4,19 +4,19 @@
 
 ## Follow up the steps!
 
-## Initialize a new npm package by running the following command in your terminal and following the prompts:
+## 1. Initialize a new npm package by running the following command in your terminal and following the prompts:
 
 ```
 npm init
 ```
 
-## Now you will need to install the necessary dependencies for the project by running the following command in your terminal:
+## 2. Now you will need to install the necessary dependencies for the project by running the following command in your terminal:
 
 ```
 npm install --save react react-dom
 ```
 
-## we are installing all the necessary dependencies at once!
+## 3. we are installing all the necessary dependencies at once!
 
 ```
 npm install --save-dev webpack webpack-cli webpack-dev-server babel-loader @babel/core @babel/preset-env @babel/preset-react css-loader style-loader eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react prettier
@@ -24,7 +24,7 @@ npm install --save-dev webpack webpack-cli webpack-dev-server babel-loader @babe
 
 ### Note: This will install `React`, `React-DOM`, `Webpack`, `Webpack` `CLI`, `Webpack` `Dev` `Server`, `Babel`, `ESLint`, `Prettier`, and some `loaders` and `plugins`.
 
-## Now Create a new file called `webpack.config.js` in the root of your project with the following contents:
+## 4. Now Create a new file called `webpack.config.js` in the root of your project with the following contents:
 
 `webpack.config.js`
 
@@ -64,7 +64,7 @@ module.exports = {
 
 <h3>After that </h3>
 
-## Create a new file called `.babelrc` in the root of your project with the following contents:
+## 5. Create a new file called `.babelrc` in the root of your project with the following contents:
 
 `.babelrc`
 
@@ -75,3 +75,71 @@ module.exports = {
 ```
 
 This will set up Babel to use the `@babel/preset-env` and `@babel/preset-react presets`
+
+## 6. Create a new file called .eslintrc.json in the root of your project with the following contents:
+
+```.eslintrc
+
+```
+
+```
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  }
+}
+
+```
+
+## 7. Create a new file called .prettierrc in the root of your project with the following contents:
+
+`prettierrc`
+
+```
+{
+  "semi": true,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "arrowParens": "avoid",
+  "endOfLine": "auto"
+}
+
+```
+
+## 8. Update your package.json file with the following scripts:
+
+`package.json`
+
+```
+"scripts": {
+  "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx src/**/*.{js,jsx,ts,tsx}"
+},
+```
+
+## 9. Run npm start in your terminal to start the development server.
+
+```
+npm start
+```
