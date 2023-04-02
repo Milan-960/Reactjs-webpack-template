@@ -14,16 +14,31 @@ export const App = () => {
             <img src={webpacks} className="App-logo" alt="logo" />
           </div>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            React + WebPack Template! Edit <code>src/App.js</code> and save to
+            reload.
           </p>
-          <a
-            className="App-link"
-            href="https://react.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <div className="learn-both">
+            <div>
+              <a
+                className="App-link"
+                href="https://reactjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn React
+              </a>
+            </div>
+            <div>
+              <a
+                className="App-link"
+                href="https://webpack.js.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn WebPack
+              </a>
+            </div>
+          </div>
         </header>
       </div>
     </>
