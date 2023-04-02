@@ -5,8 +5,10 @@
     "plugin:prettier/recommended"
   ],
   "plugins": ["react", "prettier"],
+  // Get rid of the props types
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/prop-types": "off"
   },
   "parserOptions": {
     "ecmaFeatures": {
