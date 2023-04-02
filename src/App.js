@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './assets/logo.svg';
-import webpack from './assets/webpack.png';
+import webpacks from './assets/webpack.svg';
 
 export const App = () => {
   console.log('This is app');
@@ -11,8 +11,7 @@ export const App = () => {
         <header className="App-header">
           <div className="App-headers">
             <img src={logo} className="App-logo" alt="logo" />
-
-            <img src={webpack} className="App-logo" alt="logo" />
+            <img src={webpacks} className="App-logo" alt="logo" />
           </div>
           <p>
             Edit <code>src/App.js</code> and save to reload.
