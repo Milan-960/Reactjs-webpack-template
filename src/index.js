@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 import { App } from './App';
 import './styles/index.scss';
 
-function Root() {
+const Root = () => {
   return <App />;
-}
+};
 
-ReactDOM.render(<Root />, document.getElementById('root'));
+ReactDOM.createRoot(document.getElementById('root')).render(<Root />);
