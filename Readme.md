@@ -1,3 +1,14 @@
+<h1 align="center">
+  React + Webpack Template
+</h1>
+
+<p align="center">
+    A <a href="https://react.dev">React</a> + <a href="https://webpack.js.org/">Webpack</a> starter template.
+</p>
+
+<img align="right" src="./SS/home.png" width="100%"/>
+<p>&nbsp;</p>
+
 # How to configure webpack from scratch
 
 **_Create a new directory for your project and navigate to it in your terminal._**
