@@ -1,0 +1,19 @@
+{
+  "name": "Milan's-Portfolio",
+  "short_name": "Milan",
+  "icons": [
+    {
+      "src": "./img/log.jpeg",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#000",
+  "theme_color": "#623686",
+  "description": "A simple webpack Template!",
+  "lang": "en-UK"
+}
