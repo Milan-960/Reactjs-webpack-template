@@ -6,7 +6,7 @@
     A <a href="https://react.dev">React</a> + <a href="https://webpack.js.org/">Webpack</a> starter template.
 </p>
 
-<img align="right" src="./SS/home.png" width="100%"/>
+<img align="right" src="./SS/homenew.png" width="100%"/>
 <p>&nbsp;</p>
 
 # How to configure webpack from scratch
